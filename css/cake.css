@@ -1,0 +1,77 @@
+.cake {
+	min-height: 100vh;
+	padding: 100px 0;
+}
+
+.cake .wrapper {
+	max-width: 1200px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.cake .box {
+	width: 33.33%;
+	padding: 0 15px;
+	position: relative;
+}
+
+.cake .box h3 {
+	cursor: default;	
+	font-family: 'Pacifico', cursive;
+	font-size: 2.25rem;
+	color: #000;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: center;
+	line-height: 0.9;
+	width: 100%;
+	padding: 0 15px;
+	margin-top: .5em;
+	z-index:2;
+}
+
+.box.col1 h3 {	color: #52382c; }
+.box.col2 h3 {	color: #a0134c; }
+.box.col3 h3 {	color: #142741; }
+
+.img-box {
+	display:block;
+	position: relative;
+}
+
+.img-box img {
+	display: block;
+	width: 100%;
+}
+
+.img-box img.over {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width:100%;
+	height:100%;
+	opacity:0;
+	transition: opacity .5s ease;
+}
+
+.img-box:hover img.over {
+	opacity:1;
+	z-index:1;
+}
+
+@media screen and (max-aspect-ratio:1/1) and (max-width: 767px) {
+
+	.cake .box {
+		width: 100%;
+		padding: 20px 0;
+	}
+
+	.cake .box h3 {
+		font-size: 3.5rem;
+	}
+}

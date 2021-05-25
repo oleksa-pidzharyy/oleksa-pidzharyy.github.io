@@ -1,0 +1,84 @@
+.receipt {}
+.receipt .wrapper {}
+.slider {}
+
+.slide {
+	background-color: #f5f4e0;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	min-height: 100vh;
+}
+
+.slide p {
+	max-width: 400px;
+	margin: auto;
+}
+
+.slide .txt-box {
+	width: 50%;
+	align-self: center;
+	text-align: center;
+}
+
+.slide .txt-box h2 {
+	font-family: 'Pacifico', cursive;
+	color: #52382c;
+	max-width: 400px;
+	margin: auto;
+	margin-bottom: .5em;
+	font-size: 3.4rem;
+	line-height: 1.1;
+}
+
+.txt-box div {
+	color: #52382c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.txt-box div span {
+	width: calc(50% - 6px);
+	max-width: 140px;
+}
+
+.txt-box div span:nth-child(1) {
+	text-align: right;
+	padding-right: 6px;
+}
+
+.txt-box div span:nth-child(2) {
+	text-align: left;
+	/*padding-left: 6px;*/
+}
+
+.slide .img-box {
+	width:50%;
+}
+
+.img-box img {
+	display: block;
+	max-width: 100%;
+}
+
+@media screen and (orientation: portrait) {
+
+	.slide .txt-box {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.slide .txt-box,
+	.slide .img-box {
+		width:100%;
+	}
+
+	.slide .txt-box h2 {
+		font-size: 2rem;
+		max-width: 250px;
+		margin-top: 1em;
+	}
+
+}

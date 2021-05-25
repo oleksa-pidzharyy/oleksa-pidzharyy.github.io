@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #002544;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  padding:0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  padding: 3rem 0;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__item {
+  font-size: 3rem;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.navigation__link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
